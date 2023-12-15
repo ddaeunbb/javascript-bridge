@@ -6,6 +6,7 @@ class App {
   play() {
     try{
       this.#controller.buildBridge();
+      this.#controller.moveOneBlock();
     } catch (error) {
       Console.print(error.message);
     }
