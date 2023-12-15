@@ -1,9 +1,14 @@
-const BridgeGame = require('./controller/BridgeGame');
+const { Console } = require('@woowacourse/mission-utils');
+const BridgeGameController = require('./controller/BridgeGameController');
 
 class App {
-  #controller = new BridgeGame();
+  #controller = new BridgeGameController();
   play() {
-    this.#controller.buildBridge();
+    try{
+      this.#controller.buildBridge();
+    } catch (error) {
+      Console.print(error.message);
+    }
   }
 }
 
