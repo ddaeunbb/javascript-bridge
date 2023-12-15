@@ -1,1 +1,8 @@
 node_modules
+package-lock.json
+package.json
+.vscode
+.eslintrc.cjs
+.prettierrc
+.prettierignore
+.DS_Store
