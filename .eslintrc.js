@@ -22,12 +22,13 @@ module.exports = {
     // 표현식을 구분하는 연산자 옆에 줄 바꿈을 삽입
     'operator-linebreak': ['error', 'before'],
     // 함수의 길이 제한
-    'max-lines-per-function': ['error', { max: 15 }],
+    'max-lines-per-function': ['error', { max: 10 }],
     // 메서드 내부에 this가 사용되어야하는지 여부
     'class-methods-use-this': 'warn',
     // class 내부 요소들 공백라인 여부
     'lines-between-class-members': 'off',
     // if에서 return문 사용 시, else문 사용불가
     'no-else-return': 'error',
+    "max-params" : ['error', 3]
   },
 };
