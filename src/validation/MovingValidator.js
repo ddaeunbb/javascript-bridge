@@ -12,19 +12,19 @@ class MovingValidator {
    * 대문자인지 판별한다.
    * @param {string} direction
   */
-  isUpperCase(direction) {
+  static isUpperCase(direction) {
     if(!REGEX_UPPER.test(direction)) throw new CustomError(ERROR_MESSAGE.shouldBeUpperCase);
   }
   /**
    * 'U' or 'D' 인지 판별한다.
    * @param {string} direction
   */
-  isUpOrDown(direction) {
+  static isUpOrDown(direction) {
     const  { up, down } = STR_BRIDGE;
     if(!(direction === up || direction === down)) throw new CustomError(ERROR_MESSAGE.shouldBeUorD);
   }
 
-  validateMoving(direction) {
+  static validateMoving(direction) {
     this.isUpperCase(direction)
     this.isUpOrDown(direction);
   }
