@@ -13,6 +13,14 @@ const SYMBOL = Object.freeze({
   space: ' ',
 })
 
+const STR_GAMEPROCESS = Object.freeze({
+  continue: 'continue',
+  fail: 'fail',
+  success: 'success',
+  restart: 'R',
+  quit: 'Q',
+})
 
 exports.STR_BRIDGE = STR_BRIDGE;
 exports.SYMBOL = SYMBOL;
+exports.STR_GAMEPROCESS = STR_GAMEPROCESS;

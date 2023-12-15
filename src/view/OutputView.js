@@ -21,9 +21,17 @@ const OutputView = Object.freeze({
   /**
    * 게임의 최종 결과를 정해진 형식에 맞춰 출력한다.
    */
-  printResult() {},
+  printResult(result, tryCount) {
+    Console.print(`${OUTPUT_MESSAGE.printTotalResult}${result}`)
+    Console.print(`${OUTPUT_MESSAGE.printTotalTryCount}${tryCount}`);
+  },
+
   printPlay() {
     Console.print(OUTPUT_MESSAGE.printPlay);
+  },
+
+  printResultPhrase() {
+    Console.print(OUTPUT_MESSAGE.printResultPhrase);
   }
 });
 

@@ -22,7 +22,11 @@ const InputView = {
   /**
    * 사용자가 게임을 다시 시도할지 종료할지 여부를 입력받는다.
    */
-  readGameCommand() {},
+  readGameCommand() {
+    let result = '';
+    Console.readLine(INPUT_MESSAGE.readGameCommand, (input) => {result = input})
+    return result;
+  },
 };
 
 module.exports = InputView;
