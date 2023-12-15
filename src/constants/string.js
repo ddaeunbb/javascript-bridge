@@ -21,6 +21,12 @@ const STR_GAMEPROCESS = Object.freeze({
   quit: 'Q',
 })
 
+const STR_GAMERESULT = Object.freeze({
+  success: '성공',
+  fail: '실패',
+});
+
 exports.STR_BRIDGE = STR_BRIDGE;
 exports.SYMBOL = SYMBOL;
 exports.STR_GAMEPROCESS = STR_GAMEPROCESS;
+exports.STR_GAMERESULT = STR_GAMERESULT;
